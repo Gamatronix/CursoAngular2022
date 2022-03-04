@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioFavoritosService } from '../servicio-favoritos.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  public listaVideos:Array<any>=[];
+  constructor(private servicioFavoritos: ServicioFavoritosService) { }
 
   ngOnInit(): void {
+    this.servicioFavoritos.diparadorFavoritos.subscribe(
+      data=>{this.listaVideos}
+    )
   }
+
 
 }
