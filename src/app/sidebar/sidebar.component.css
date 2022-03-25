@@ -13,17 +13,16 @@
     display: block;
 }
 .favorite-list li{
-    padding: 5rem;
+    padding: 1rem;
 }
 .mini-image{
-    width: 70%;
-    height: 50%;
-    object-fit: cover;
+    width: 7rem;
+    height: 4rem;
 }
 .divider{
-    border-top: solid 1px floralwhite;
+    border-top: solid 1px rgb(12, 8, 0);
 }
 
 .title-inside{
-    font-weight: 600;
+    font-weight: 800;
 }

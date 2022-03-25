@@ -13,7 +13,7 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
     this.servicioFavoritos.diparadorFavoritos.subscribe(
-      data=>{this.listaVideos}
+      data=>{this.listaVideos.push(data)}
     )
   }
 
